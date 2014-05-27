@@ -1,0 +1,39 @@
+Development notes:
+
+Jenkisn monitoring - sound only
+As SM I want to 
+
+Open:
+? Have my login data encrypted so that nobody can see them
+? Be able to configure different sound sets for different builds 
+
+Done:
+8 Hear if a build has failed so that I can react immediately
+3 Only hear if it failed first time so that i am not disturbed
+1 Hear if a failed build succeeded so that I know its fine
+1 Hear if the last failed build succeded so that I know everything is fine
+1 Hear if the first build faild so that I know it was green before
+
+
+Architecture :)
+- bash get file + mv oldfile to newfile
+------ ruby -----
+- call script file1 file2
+- Load files in string
+- Parse oldfile, newfile
+- merge projects by name, oldstatus, newstatus -> hashmap
+- calculate status list
+- output result to bash
+----------
+- bash case play
+- cronjob to call periodically
+
+Possible States:
+AllOk (includes no change)
+LastFixed
+FirstFailure
+NewFailure
+StillFailing
+OneFixed
+
+

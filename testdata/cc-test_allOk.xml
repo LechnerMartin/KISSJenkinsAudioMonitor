@@ -1,0 +1,6 @@
+<Projects>
+  <Project webUrl="http://jenkins.com/job/build-trunk/" name="build-trunk" lastBuildLabel="3776" lastBuildTime="2013-10-16T09:49:10Z" lastBuildStatus="Success" activity="Building" />
+  <Project webUrl="http://jenkins.com/job/db-trunk/" name="db-trunk" lastBuildLabel="917" lastBuildTime="2013-10-16T10:02:16Z" lastBuildStatus="Success" activity="Sleeping" />
+  <Project webUrl="http://jenkins.com/job/continuous-trunk/" name="continuous-trunk" lastBuildLabel="1857" lastBuildTime="2013-10-16T07:23:26Z" lastBuildStatus="Success" activity="Building" />
+</Projects>
+
