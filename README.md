@@ -8,6 +8,7 @@ It allows to play a sound (or execute any other command) based on the outcome of
 Six different states are distinguished: OK, FirstFailure, StillFailing, NewFailure, OneFixed, LastFixed
 
 Why was it build and alternatives:
+
 As a Scrum Master I noticed that an extreme feedback monitor is easily overlooked and therefore not enough to notify about build problems.
 So I searched for alternatives but found none that fitted my needs (Different sounds per build, works on linux).
 Therefore, I programmed a very lightweight solution myself.
@@ -27,6 +28,7 @@ Preconditions:
 - Jenkins view accessible with cc.xml suffix 
 
 Verify it works: 
+
 run rake -> runs all tests 
 
 Howto use:
@@ -36,10 +38,11 @@ Howto use:
 
 
 Crontab example:
+
 */1 08-18 * * 1-5 /path/to/jenkinsMonitor/bin/JenkinsMonitor.sh 2>&1 >> /tmp/monitor.log
 00 00 * * * mv /tmp/monitor.log /tmp/monitor.log.old
 
 What it does:
-# run every minute between 8-18:00
-# clean logfile
+- run every minute between 8-18:00
+- clean logfile
 
