@@ -25,7 +25,7 @@ Otherwise install and enjoy :)
 ### Preconditions: 
 - Linux/bash
 - ruby >= 1.9
-- libxml ruby: gem install --no-user-install libxml-ruby 
+- libxml ruby (install global for cron): gem install --no-user-install libxml-ruby 
 - Jenkins view accessible with cc.xml suffix
 - working command line play command for sound files
 
