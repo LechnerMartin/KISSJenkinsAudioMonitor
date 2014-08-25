@@ -31,8 +31,8 @@ Otherwise install and enjoy :)
 
 ### Verify it works: 
 
-run rake -> runs all tests 
-play soundfile
+- run rake -> runs all tests 
+- play soundfile
 
 ## Howto use:
 - copy into a directory
