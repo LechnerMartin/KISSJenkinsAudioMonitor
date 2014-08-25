@@ -41,10 +41,10 @@ play soundfile
 
 
 ### Crontab example:
-
+````
 */1 08-18 * * 1-5 /path/to/jenkinsMonitor/bin/JenkinsMonitor.sh 2>&1 >> /tmp/monitor.log
-
 00 00 * * * mv /tmp/monitor.log /tmp/monitor.log.old
+````
 
 What it does:
 - run every minute between 8-18:00
