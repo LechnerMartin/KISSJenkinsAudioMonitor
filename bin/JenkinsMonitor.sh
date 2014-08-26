@@ -27,6 +27,7 @@ RESULT=`ruby $SCRIPTDIR/JenkinsMonitor.rb $FILEOLD $FILENEW`
 cp $FILENEW $FILEOLD
 
 function playSound {
+	echo "playing $1"
 	play -q $1
 }
 
@@ -49,7 +50,7 @@ case $RESULT in
 		playSound "$SOUNDDIR/onefail_tos_hullhit_3.mp3"
 		;;
 	OneFixed)
-		playSound "$SOUNDDIR/allfixed_diagnosticcomplete_ep.mp3"
+                playSound "$SOUNDDIR/onefixed_voy-doc-onedown.wav"
 		;;
 	OK)
 		;;
